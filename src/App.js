@@ -1,8 +1,8 @@
 import "./App.css";
 import { Routes, Route } from "react-router";
 import Home from "./components/Home/Home";
-import Register from "./components/Register";
-import Login from "./components/Login";
+import Register from "./components/Register/Register";
+import Login from "./components/Login/Login";
 import UserContextProvider from "./context/userContext";
 
 function App() {

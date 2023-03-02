@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Footer from "../common/Footer/Footer";
+import Footer from "../../common/Footer/Footer";
 import { Link } from "react-router-dom";
-import userContextProvider from "../context/userContext";
+import userContextProvider from "../../context/userContext";
 
 const Register = () => {
   const [form, setForm] = useContext(userContextProvider);
@@ -23,28 +23,24 @@ const Register = () => {
         <input
           type="text"
           name="name"
-          value={form.name}
           onChange={handleChange}
           placeholder="Nombre"
         />
         <input
           type="text"
           name="lastname"
-          value={form.name}
           onChange={handleChange}
           placeholder="Apellido"
         />
         <input
           type="email"
           name="email"
-          value={form.name}
           onChange={handleChange}
           placeholder="Correo Electrónico"
         />
         <input
           type="password"
           name="password"
-          value={form.name}
           onChange={handleChange}
           placeholder="Contraseña"
         />
