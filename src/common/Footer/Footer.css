@@ -1,0 +1,28 @@
+.footer {
+  background-color: #0860c4;
+  width: 100%;
+  height: 36px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer__name {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__name:hover {
+  color: #08c4c4;
+}
+
+.footer__logo {
+  margin-left: 20px;
+}
