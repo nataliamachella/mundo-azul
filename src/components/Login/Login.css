@@ -14,6 +14,11 @@
   color: #072cba;
 }
 
+.login form {
+  display: flex;
+  flex-direction: column;
+}
+
 .login input {
   width: 320px;
   height: 50px;
