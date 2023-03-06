@@ -25,11 +25,9 @@ const Login = () => {
     setError("");
     try {
       await login(user.email, user.password);
+
       navigate("/dashboard");
     } catch (error) {
-      /* if (error.code === "auth/invalid-email") setError("Correo Inválido");
-      if (error.code === "auth/weak-password")
-        setError("La contraseña debe tener como mínimo 6 caracteres"); */
       setError(error.message);
     }
   };
@@ -38,14 +36,15 @@ const Login = () => {
     if (!user.email) return setError("Debes ingresar tu correo electrónico");
     try {
       await resetPassword(user.email);
+      setError(
+        "Enviamos un correo electrónico con un enlace para reestablecer tu contraseña"
+      );
     } catch (error) {
       setError(error.message);
     }
   };
   return (
     <div className="login">
-      {error && <ErrorAlert message={error} />}
-
       <h1>Hola!</h1>
       <form onSubmit={handleSubmit}>
         <input
@@ -66,6 +65,7 @@ const Login = () => {
         Si no tienes una cuenta puedes crearla
         <a href="/registro"> AQUÍ</a>
       </p>
+      {error && <ErrorAlert message={error} />}
       <a onClick={handleResetPassword} className="reset-password">
         Olvidé la contraseña
       </a>

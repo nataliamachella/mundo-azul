@@ -27,9 +27,6 @@ const Register = () => {
       await signUp(user.email, user.password);
       navigate("/dashboard");
     } catch (error) {
-      /* if (error.code === "auth/invalid-email") setError("Correo Inválido");
-      if (error.code === "auth/weak-password")
-        setError("La contraseña debe tener como mínimo 6 caracteres"); */
       setError(error.message);
     }
   };
@@ -53,10 +50,10 @@ const Register = () => {
         />
         <Button text="Registrarme" style="primary-btn" />
       </form>
-      <div>
-        <span>Ya estás registrado?</span>
-        <Link to="/">Ingresar</Link>
-      </div>
+      <p>
+        <span>Ya estás registrado? </span>
+        <Link to="/login">Ingresar</Link>
+      </p>
       <Footer />
     </div>
   );
