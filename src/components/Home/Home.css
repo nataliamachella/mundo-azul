@@ -12,11 +12,11 @@
 .home h2 {
   color: #072cba;
   text-shadow: 0px 4px 4px #0000002b;
-  width: 250px;
+  width: 300px;
   text-align: center;
-  font-size: 20px;
+  font-size: 24px;
   font-family: "Alice", serif;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
 
 .google-btn {
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
+
   cursor: pointer;
 }
 
