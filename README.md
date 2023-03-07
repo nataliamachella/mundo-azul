@@ -1,6 +1,6 @@
-# Mundo Azul
+# 💙 Mundo Azul 
 
-Esta web app está creada especialmente para familias que tengan niñ@s con TEA, con el objetivo de compartir información entre las familias para ayudar sobre todo a las familias que comienzan a transitar una nueva etapa en sus vidas desde el diagnóstico de sus niñ@s. 
+Esta web app está creada especialmente para familias que tengan niñ@s con TEA. Este proyecto tiene como objetivo empoderar a las familias a través de las experiencias que otras familias tienen o tuvieron con sus niñ@s. 
 
 ![App Screenshot](https://github.com/nataliamachella/mundo-azul/blob/main/public/Mundo-Azul.png)
 
