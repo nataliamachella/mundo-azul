@@ -1,20 +1,21 @@
 import React from "react";
 import "./Dashboard.css";
-import logo from "../../assets/Logo.svg";
-import Button from "../../common/Button/Button";
+
+import Button from "../../components/Button/Button";
 import iconComunidad from "../../assets/comunidad.png";
 import iconApple from "../../assets/apple.png";
 import iconEdit from "../../assets/edit.png";
 import iconHospital from "../../assets/hospital.png";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
+import Header from "../../components/Header/Header";
 
 const Dashboard = () => {
   const navigate = useNavigate();
   const { user } = useAuth();
 
   const onClickAboutMe = () => {
-    navigate("/nosotros");
+    navigate("/sobre-mi");
   };
   const onClickRecipes = () => {
     navigate("/recetas");
@@ -28,9 +29,9 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard">
-      <h1>Hola, {user.displayname || user.email}!</h1>
+      <Header />
+      <h3>Hola, {user.displayname || user.email}!</h3>
       <a href="/">Cerrar Sesión</a>
-      <img src={logo} className="logo" />
 
       <Button
         text="nosotros"

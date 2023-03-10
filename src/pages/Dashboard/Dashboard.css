@@ -5,14 +5,14 @@
   justify-content: center;
 }
 
-.dashboard h1 {
+.dashboard h3 {
   font-family: "Englebert", sans-serif;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 400;
-  margin-top: 50px;
+  margin-top: 90px;
   color: #072cba;
 }
 
-.logo {
-  margin: 50px 0;
+.dashboard a {
+  margin-bottom: 160px;
 }

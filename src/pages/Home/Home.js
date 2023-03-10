@@ -1,9 +1,9 @@
 import React from "react";
 import "./Home.css";
-import Footer from "../../common/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import logoMundoAzul from "../../assets/Logo.svg";
 import logoGoogle from "../../assets/Google__G__logo.svg";
-import Button from "../../common/Button/Button";
+import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
 

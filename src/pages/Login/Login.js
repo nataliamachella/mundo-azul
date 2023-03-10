@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./Login.css";
-import Button from "../../common/Button/Button";
-import Footer from "../../common/Footer/Footer";
+import Button from "../../components/Button/Button";
+import Footer from "../../components/Footer/Footer";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
-import ErrorAlert from "../../common/ErrorAlert/ErrorAlert";
+import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
 
 const Login = () => {
   const [user, setUser] = useState({

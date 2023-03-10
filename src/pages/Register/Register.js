@@ -1,10 +1,10 @@
-import Footer from "../../common/Footer/Footer";
+import Footer from "../../components/Footer/Footer";
 import { Link, useNavigate } from "react-router-dom";
 import "./Register.css";
 import { useState } from "react";
 import { useAuth } from "../../context/authContext";
-import Button from "../../common/Button/Button";
-import ErrorAlert from "../../common/ErrorAlert/ErrorAlert";
+import Button from "../../components/Button/Button";
+import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
 
 const Register = () => {
   const [user, setUser] = useState({
