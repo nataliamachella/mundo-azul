@@ -7,12 +7,16 @@
 
 .dashboard h3 {
   font-family: "Englebert", sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
-  margin-top: 90px;
+  margin-top: 30px;
   color: #072cba;
 }
 
 .dashboard a {
-  margin-bottom: 160px;
+  margin-bottom: 40px;
+}
+
+.dashboard img {
+  margin-bottom: 20px;
 }

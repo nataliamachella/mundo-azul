@@ -7,6 +7,8 @@ import { AuthProvider } from "./context/authContext";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AboutMe from "./pages/AboutMe/AboutMe";
+import SearchPage from "./pages/SearchPage/SearchPage";
+import Doctors from "./pages/Doctors/Doctors";
 
 function App() {
   return (
@@ -33,6 +35,8 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route path="/busqueda" element={<SearchPage />} />
+          <Route path="/doctores" element={<Doctors />} />
         </Routes>
       </AuthProvider>
     </>

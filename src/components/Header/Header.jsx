@@ -4,32 +4,33 @@ import iconHome from "../../assets/Home.png";
 import iconSearch from "../../assets/Search.png";
 import iconMessage from "../../assets/Message.png";
 import iconUser from "../../assets/User.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
-      <h1>Mundo Azul</h1>
+      {/* <h1>Mundo Azul</h1> */}
       <nav>
         <ul>
           <li>
-            <a href="/">
+            <Link to="/">
               <img src={iconHome} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/dashboard">
               <img src={iconSearch} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <img src={iconMessage} />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="#">
               <img src={iconUser} />
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

@@ -23,6 +23,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    if (!user) return setError(error.message);
     try {
       await login(user.email, user.password);
 
@@ -46,6 +47,7 @@ const Login = () => {
   return (
     <div className="login">
       <h1>Hola!</h1>
+      {!user && <ErrorAlert message={error} />}
       <form onSubmit={handleSubmit}>
         <input
           type="email"

@@ -20,17 +20,19 @@ export const useAuth = () => {
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
-  const [isLoading, setIsLoading] = useState(true);
 
   const signUp = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password);
   };
 
-  const login = (email, password) => {
-    signInWithEmailAndPassword(auth, email, password);
+  const login = async (email, password) => {
+    await signInWithEmailAndPassword(auth, email, password);
   };
 
-  const logout = () => signOut(auth);
+  const logout = () => {
+    signOut(auth);
+    setUser(null);
+  };
 
   const loginWithGoogle = () => {
     const googleProvider = new GoogleAuthProvider();
@@ -42,13 +44,15 @@ export function AuthProvider({ children }) {
   };
 
   useEffect(() => {
-    onAuthStateChanged(auth, (currentUser) => setUser(currentUser));
-    setIsLoading(false);
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
   }, []);
 
   return (
     <authContext.Provider
-      value={{ signUp, login, user, logout, loginWithGoogle, resetPassword }}
+      value={{ signUp, login, logout, user, loginWithGoogle, resetPassword }}
     >
       {children}
     </authContext.Provider>

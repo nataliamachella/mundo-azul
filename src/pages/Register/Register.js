@@ -23,6 +23,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+    if (error) return setError(error.message);
     try {
       await signUp(user.email, user.password);
       navigate("/dashboard");

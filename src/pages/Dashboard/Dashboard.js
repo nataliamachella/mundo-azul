@@ -9,6 +9,7 @@ import iconHospital from "../../assets/hospital.png";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/authContext";
 import Header from "../../components/Header/Header";
+import logo from "../../assets/Logo.svg";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -30,8 +31,9 @@ const Dashboard = () => {
   return (
     <div className="dashboard">
       <Header />
-      <h3>Hola, {user.displayname || user.email}!</h3>
+      <h3>Hola, {user.displayName || user.email}</h3>
       <a href="/">Cerrar Sesión</a>
+      <img src={logo} />
 
       <Button
         text="nosotros"

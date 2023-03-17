@@ -1,0 +1,13 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search input {
+  width: 200px;
+  height: 50px;
+  margin-right: 5px;
+  padding: 10px;
+}

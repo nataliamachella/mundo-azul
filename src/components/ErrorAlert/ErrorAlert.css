@@ -5,4 +5,7 @@
   padding: 3px;
   margin: 10px 0;
   font-family: "Poppins", "sans-serif";
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
