@@ -1,0 +1,139 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./components/Footer/Footer.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_footer__1IwEk {
+  background-color: #0860c4;
+  width: 100%;
+  height: 36px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  position: absolute;
+  bottom: 0;
+}
+
+.Footer_footer__name__5xHga {
+  text-decoration: none;
+  color: #fff;
+}
+
+.Footer_footer__name__5xHga:hover {
+  color: #08c4c4;
+}
+
+.Footer_footer__logo__J9Ds6 {
+  margin-left: 20px;
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./app/page.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+.page_home__Btjw1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page_logo__DgL_7 {
+  margin: 30px 0;
+  width: 215px;
+  height: 195px;
+}
+
+.page_home__Btjw1 h2 {
+  color: #072cba;
+  text-shadow: 0px 4px 4px #0000002b;
+  width: 300px;
+  text-align: center;
+  font-size: 24px;
+  font-family: "Alice", serif;
+  margin-bottom: 80px;
+}
+
+.page_google__Vr1qF {
+  width: 300px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: #072cba;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border: 2px solid #072cba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.page_google__Vr1qF img {
+  margin-right: 10px;
+}
+
+.page_google__Vr1qF:hover {
+  opacity: 0.75;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./components/Button/Button.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Button_btn__EwQ11 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Button_btn__EwQ11 button img {
+  margin: 10px;
+}
+
+.Button_primary__0sjr_,
+.Button_secondary___axeL,
+.Button_green__btHQR,
+.Button_blue__bt58W {
+  border: none;
+  border-radius: 12px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Button_primary__0sjr_ {
+  background: linear-gradient(to left, #1083ad, #08c4c4);
+}
+
+.Button_primary__0sjr_:hover,
+.Button_secondary___axeL:hover,
+.Button_blue__bt58W:hover,
+.Button_green__btHQR:hover {
+  opacity: 0.75;
+}
+
+.Button_secondary___axeL {
+  background-color: #08c4c4;
+}
+
+.Button_green__btHQR {
+  background-color: #07ba88;
+}
+
+.Button_blue__bt58W {
+  background-color: #0860c4;
+}
+

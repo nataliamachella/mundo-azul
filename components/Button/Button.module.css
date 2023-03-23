@@ -1,0 +1,51 @@
+.btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn button img {
+  margin: 10px;
+}
+
+.primary,
+.secondary,
+.green,
+.blue {
+  border: none;
+  border-radius: 12px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.primary {
+  background: linear-gradient(to left, #1083ad, #08c4c4);
+}
+
+.primary:hover,
+.secondary:hover,
+.blue:hover,
+.green:hover {
+  opacity: 0.75;
+}
+
+.secondary {
+  background-color: #08c4c4;
+}
+
+.green {
+  background-color: #07ba88;
+}
+
+.blue {
+  background-color: #0860c4;
+}

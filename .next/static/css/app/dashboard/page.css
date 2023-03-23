@@ -1,0 +1,122 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./components/Button/Button.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Button_btn__EwQ11 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Button_btn__EwQ11 button img {
+  margin: 10px;
+}
+
+.Button_primary__0sjr_,
+.Button_secondary___axeL,
+.Button_green__btHQR,
+.Button_blue__bt58W {
+  border: none;
+  border-radius: 12px;
+  width: 300px;
+  height: 50px;
+  text-align: center;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.Button_primary__0sjr_ {
+  background: linear-gradient(to left, #1083ad, #08c4c4);
+}
+
+.Button_primary__0sjr_:hover,
+.Button_secondary___axeL:hover,
+.Button_blue__bt58W:hover,
+.Button_green__btHQR:hover {
+  opacity: 0.75;
+}
+
+.Button_secondary___axeL {
+  background-color: #08c4c4;
+}
+
+.Button_green__btHQR {
+  background-color: #07ba88;
+}
+
+.Button_blue__bt58W {
+  background-color: #0860c4;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./components/Header/Header.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__pUpk9 {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #0860c4;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.Header_header__pUpk9 nav {
+  width: 100%;
+}
+
+.Header_header__pUpk9 nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.Header_header__pUpk9 nav ul li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./app/dashboard/dashboard.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.dashboard_dashboard__5cERf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard_dashboard__5cERf h3 {
+  font-family: "Englebert", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 120px;
+  margin-bottom: 10px;
+  color: #072cba;
+}
+
+.dashboard_button__czB01 {
+  margin-bottom: 30px;
+  background-color: #fff;
+  border-style: hidden;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #072cba;
+  font-family: "Englebert", sans-serif;
+  cursor: pointer;
+}
+
+.dashboard_img__0U2tA {
+  margin-bottom: 40px;
+}
+
