@@ -4,7 +4,6 @@ import Link from "next/link";
 import styles from "./register.module.css";
 import stylesButton from "../../components/Button/Button.module.css";
 import { useState } from "react";
-import Button from "../../components/Button/Button";
 import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../context/AuthContext";
@@ -27,16 +26,14 @@ const Register = () => {
     e.preventDefault();
     setError("");
     if (error) return setError(error.message);
-
-    await signUp(user.email, user.password)
-      .then(() => {
-        router.push("/dashboard");
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        setError(errorMessage);
-      });
+    try {
+      await signUp(user.email, user.password);
+    } catch (error) {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      setError(errorMessage);
+    }
+    router.push("/dashboard");
   };
   return (
     <div className={styles.register}>
@@ -49,14 +46,14 @@ const Register = () => {
           name="email"
           onChange={handleChange}
           placeholder="Correo Electrónico"
-          required
+          required="true"
         />
         <input
           type="password"
           name="password"
           onChange={handleChange}
           placeholder="Contraseña"
-          required
+          required="true"
         />
         <button className={stylesButton.primary}>Registrarme</button>
       </form>

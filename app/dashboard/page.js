@@ -31,23 +31,24 @@ const Dashboard = () => {
   };
 
   const handleClick = async () => {
-    await logout()
-      .then(() => router.push("/"))
-      .catch((error) => console.log(error));
+    await logout();
+    router.push("/");
   };
-
-  React.useEffect(() => {
-    if (user == null) router.push("/");
-  }, [user]);
 
   return (
     <div className={styles.dashboard}>
       <Header />
+      {user ? (
+        <>
+          <h3>Hola, {user.displayName || user.email} !</h3>
+          <button onClick={handleClick} className={styles.button}>
+            Cerrar Sesión
+          </button>
+        </>
+      ) : (
+        ""
+      )}
 
-      <h3>Hola, {user.displayName || user.email} !</h3>
-      <button onClick={handleClick} className={styles.button}>
-        Cerrar Sesión
-      </button>
       <Image
         src={logo}
         alt="logo Mundo Azul"

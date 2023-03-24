@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./login.module.css";
 import stylesButton from "../../components/Button/Button.module.css";
-import Button from "../../components/Button/Button";
+
 import Footer from "../../components/Footer/Footer";
 import { useRouter } from "next/navigation";
 import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
@@ -26,15 +26,14 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    await login(user.email, user.password)
-      .then(() => {
-        router.push("/dashboard");
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        setError(errorMessage);
-      });
+    try {
+      await login(user.email, user.password);
+    } catch (error) {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      setError(errorMessage);
+    }
+    router.push("/dashboard");
   };
 
   const handleResetPassword = async () => {
