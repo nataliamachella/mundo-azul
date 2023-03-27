@@ -5,23 +5,21 @@
   justify-content: center;
 }
 
-.dashboard h3 {
-  font-family: "Englebert", sans-serif;
-  font-size: 24px;
+.dashboard h1 {
+  font-size: 36px;
   font-weight: 400;
   margin-top: 120px;
   margin-bottom: 10px;
-  color: #072cba;
 }
 
 .button {
-  margin-bottom: 30px;
-  background-color: #fff;
+  margin-bottom: 60px;
+  background-color: var(--color-white);
   border-style: hidden;
   font-size: 16px;
   text-decoration: underline;
-  color: #072cba;
-  font-family: "Englebert", sans-serif;
+  color: var(--color-primary);
+  font-family: var(--font-englebert);
   cursor: pointer;
 }
 

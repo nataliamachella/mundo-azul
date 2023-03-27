@@ -1,6 +1,17 @@
 self.__NEXT_FONT_MANIFEST={
   "pages": {},
-  "app": {},
-  "appUsingSizeAdjust": false,
+  "app": {
+    "/home/naty/Dev/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Poppins\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-poppins\",\"display\":\"swap\",\"weight\":\"400\"}],\"variableName\":\"poppins\"}": [
+      "static/media/916d3686010a8de2-s.p.woff2"
+    ],
+    "/home/naty/Dev/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Englebert\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-englebert\",\"display\":\"swap\",\"weight\":\"400\"}],\"variableName\":\"englebert\"}": [
+      "static/media/bd5471b844757d01-s.p.woff2"
+    ],
+    "/home/naty/Dev/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Roboto\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-roboto\",\"display\":\"swap\",\"weight\":[\"400\",\"700\"]}],\"variableName\":\"roboto\"}": [
+      "static/media/934c4b7cb736f2a3-s.p.woff2",
+      "static/media/0e4fe491bf84089c-s.p.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
   "pagesUsingSizeAdjust": false
 }

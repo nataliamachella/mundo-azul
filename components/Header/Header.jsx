@@ -23,12 +23,12 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/messages">
               <Image src={iconMessage} alt="icono-Message" />
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link href="/profile">
               <Image src={iconUser} alt="icono-User" />
             </Link>
           </li>

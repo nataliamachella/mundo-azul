@@ -1,0 +1,18 @@
+.profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 90px;
+}
+
+.photo {
+  border-radius: 50%;
+}
+
+.profile h1 {
+  font-size: 32px;
+
+  font-weight: 400;
+  margin-top: 25px;
+}

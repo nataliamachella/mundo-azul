@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <h4>
+      <p>
         Creado con 🤍 por
         <a
           href="https://natalia.net.ar/"
@@ -16,13 +16,18 @@ const Footer = () => {
           {" "}
           Natalia Machella
         </a>
-      </h4>
+      </p>
       <a
         href="https://github.com/nataliamachella"
         className={styles.footer__logo}
         rel="noopener noreferrer"
       >
-        <Image src={iconGithub} alt="mi Github" width={24} />
+        <Image
+          src={iconGithub}
+          alt="mi Github"
+          width={22}
+          className={styles.img}
+        />
       </a>
     </footer>
   );

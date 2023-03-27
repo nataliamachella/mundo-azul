@@ -37,9 +37,9 @@ const Home = () => {
         alt="logo de Mundo Azul"
         className={styles.logo}
       />
-      <h2>
+      <h1>
         Ninguno es tan importante como todos nosotros <span>JUNTOS</span>
-      </h2>
+      </h1>
       <Button
         style={stylesButton.blue}
         onClick={handleClick}

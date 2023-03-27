@@ -1,28 +1,34 @@
 .footer {
-  background-color: #0860c4;
+  background-color: var(--color-primary);
   width: 100%;
-  height: 30px;
+  height: 32px;
   padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.75px;
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
   position: absolute;
   bottom: 0;
 }
 
 .footer__name {
   text-decoration: none;
-  color: #fff;
+  color: var(--color-white);
 }
 
 .footer__name:hover {
-  color: #08c4c4;
+  color: var(--color-light-green);
 }
 
 .footer__logo {
   margin-left: 20px;
+}
+
+.img {
+  margin-top: 5px;
 }

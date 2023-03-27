@@ -1,0 +1,27 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[13].use[3]!./styles/globals.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --color-primary: #072cba;
+  --color-secondary: #0860c4;
+  --color-linear: linear-gradient(202.17deg, #1083ad 8.58%, #08c4c4 91.42%);
+  --color-white: #fff;
+  --color-green: #07ba88;
+  --color-light-green: #08c4c4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: var(--font-poppins);
+}
+
+h1 {
+  font-family: var(--font-englebert);
+  color: var(--color-primary);
+}
+

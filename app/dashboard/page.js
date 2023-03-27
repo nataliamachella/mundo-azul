@@ -40,7 +40,7 @@ const Dashboard = () => {
       <Header />
       {user ? (
         <>
-          <h3>Hola, {user.displayName || user.email} !</h3>
+          <h1>Hola, {user.displayName || user.email} ! </h1>
           <button onClick={handleClick} className={styles.button}>
             Cerrar Sesión
           </button>

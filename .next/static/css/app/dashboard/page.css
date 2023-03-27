@@ -21,17 +21,18 @@
   width: 320px;
   height: 50px;
   text-align: center;
-  color: #fff;
-  font-family: Roboto, sans-serif;
+  color: var(--color-white);
+  font-family: var(--font-roboto);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
   margin-bottom: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .Button_primary__0sjr_ {
-  background: linear-gradient(to left, #1083ad, #08c4c4);
+  background: var(--color-linear);
 }
 
 .Button_primary__0sjr_:hover,
@@ -42,15 +43,15 @@
 }
 
 .Button_secondary___axeL {
-  background-color: #08c4c4;
+  background-color: var(--color-light-green);
 }
 
 .Button_green__btHQR {
-  background-color: #07ba88;
+  background-color: var(--color-green);
 }
 
 .Button_blue__bt58W {
-  background-color: #0860c4;
+  background-color: var(--color-secondary);
 }
 
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
@@ -62,7 +63,7 @@
   align-items: center;
   background-color: #0860c4;
   width: 100%;
-  height: 50px;
+  height: 70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -96,23 +97,21 @@
   justify-content: center;
 }
 
-.dashboard_dashboard__5cERf h3 {
-  font-family: "Englebert", sans-serif;
-  font-size: 24px;
+.dashboard_dashboard__5cERf h1 {
+  font-size: 36px;
   font-weight: 400;
   margin-top: 120px;
   margin-bottom: 10px;
-  color: #072cba;
 }
 
 .dashboard_button__czB01 {
-  margin-bottom: 30px;
-  background-color: #fff;
+  margin-bottom: 60px;
+  background-color: var(--color-white);
   border-style: hidden;
   font-size: 16px;
   text-decoration: underline;
-  color: #072cba;
-  font-family: "Englebert", sans-serif;
+  color: var(--color-primary);
+  font-family: var(--font-englebert);
   cursor: pointer;
 }
 
