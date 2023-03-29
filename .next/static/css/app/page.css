@@ -69,15 +69,15 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.Button_primary__0sjr_ {
-  background: var(--color-linear);
-}
-
 .Button_primary__0sjr_:hover,
 .Button_secondary___axeL:hover,
 .Button_blue__bt58W:hover,
 .Button_green__btHQR:hover {
   opacity: 0.75;
+}
+
+.Button_primary__0sjr_ {
+  background: var(--color-linear);
 }
 
 .Button_secondary___axeL {
@@ -92,6 +92,20 @@
   background-color: var(--color-secondary);
 }
 
+.Button_btn_profile__xa_na {
+  border: 2px solid var(--color-light-green);
+  background-color: transparent;
+  color: var(--color-light-green);
+  font-family: var(--font-roboto);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  width: 320px;
+  height: 50px;
+  border-radius: 12px;
+}
+
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./app/page.module.css ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
@@ -100,6 +114,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .page_logo__DgL_7 {

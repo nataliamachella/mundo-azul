@@ -1,0 +1,64 @@
+.h1 {
+  width: 320px;
+  height: 50px;
+  top: 80px;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: var(--color-light-green);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+.main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: var(--color-white);
+}
+
+.form input {
+  line-height: 1.5;
+  width: 270px;
+  height: 40px;
+  border: 2px solid var(--color-primary);
+  padding: 0 10px;
+  margin-left: 20px;
+  border-radius: 15px;
+}
+
+.form button {
+  text-align: center;
+  background-color: var(--color-white);
+  border: none;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}

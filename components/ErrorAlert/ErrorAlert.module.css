@@ -4,7 +4,7 @@
   font-size: 14px;
   padding: 3px;
   margin: 10px 0;
-  font-family: "Poppins", "sans-serif";
+  font-family: var(--font-poppins);
   display: flex;
   justify-content: center;
   text-align: center;

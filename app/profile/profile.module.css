@@ -1,9 +1,11 @@
 .profile {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 25px;
   margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .photo {
@@ -15,4 +17,24 @@
 
   font-weight: 400;
   margin-top: 25px;
+}
+
+.button {
+  margin-bottom: 30px;
+  background-color: var(--color-white);
+  border-style: hidden;
+  font-size: 16px;
+  text-decoration: underline;
+  color: var(--color-primary);
+  font-family: var(--font-englebert);
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }

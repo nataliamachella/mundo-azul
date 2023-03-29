@@ -7,62 +7,77 @@ import { useState } from "react";
 import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../context/AuthContext";
+import Swal from "sweetalert2";
 
 const Register = () => {
-  const [user, setUser] = useState({
+  const [data, setData] = useState({
     email: "",
     password: "",
   });
 
   const router = useRouter();
-  const { signUp } = useAuth();
+  const { createUser } = useAuth();
   const [error, setError] = useState();
 
   const handleChange = ({ target: { name, value } }) => {
-    setUser({ ...user, [name]: value });
+    setData({ ...data, [name]: value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    if (error) return setError(error.message);
+
     try {
-      await signUp(user.email, user.password);
+      await createUser(data.email, data.password);
+
+      Swal.fire({
+        icon: "success",
+        title: "Cuenta Creada",
+        text: "Su cuenta  ha sido creada exitosamente!",
+      });
+
+      router.push("/dashboard");
     } catch (error) {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      setError(errorMessage);
+      if (error.code === "auth/weak-password") {
+        setError("Su contraseña debe tener al menos 6 caracteres");
+      }
+
+      if (error.code === "auth/email-already-in-use") {
+        setError("Este correo ya se encuentra registrado");
+      }
     }
-    router.push("/dashboard");
   };
   return (
-    <div className={styles.register}>
-      {error && <ErrorAlert message={error} />}
+    <>
+      <div className={styles.register}>
+        <h1>Mundo Azul</h1>
+        <span>Registro</span>
 
-      <h1>Bienvenid@!</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          name="email"
-          onChange={handleChange}
-          placeholder="Correo Electrónico"
-          required="true"
-        />
-        <input
-          type="password"
-          name="password"
-          onChange={handleChange}
-          placeholder="Contraseña"
-          required="true"
-        />
-        <button className={stylesButton.primary}>Registrarme</button>
-      </form>
-      <p>
-        <span>Ya estás registrado? </span>
-        <Link href="/login">Ingresar</Link>
-      </p>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            name="email"
+            onChange={handleChange}
+            placeholder="Correo Electrónico"
+            required={true}
+          />
+          <input
+            type="password"
+            name="password"
+            onChange={handleChange}
+            placeholder="Contraseña"
+            required={true}
+          />
+          <button className={stylesButton.primary}>Registrarme</button>
+        </form>
+        {error && <ErrorAlert message={error} />}
+        <p>
+          <span>Ya estás registrado? </span>
+          <Link href="/login">Ingresar</Link>
+        </p>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

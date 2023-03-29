@@ -160,7 +160,7 @@
       "*": {
         "id": "(sc_client)/./public/assets/github-w.png",
         "chunks": [
-          "app/page:app/page"
+          "app/dashboard/page:app/dashboard/page"
         ],
         "name": "*",
         "async": false
@@ -168,7 +168,7 @@
       "": {
         "id": "(sc_client)/./public/assets/github-w.png",
         "chunks": [
-          "app/page:app/page"
+          "app/dashboard/page:app/dashboard/page"
         ],
         "name": "",
         "async": false
@@ -176,7 +176,7 @@
       "default": {
         "id": "(sc_client)/./public/assets/github-w.png",
         "chunks": [
-          "app/page:app/page"
+          "app/dashboard/page:app/dashboard/page"
         ],
         "name": "default",
         "async": false
@@ -299,6 +299,58 @@
           "app/profile/page:app/profile/page"
         ],
         "name": "useAuth",
+        "async": false
+      }
+    },
+    "(app-client)/./app/login/page.js": {
+      "*": {
+        "id": "(sc_client)/./app/login/page.js",
+        "chunks": [
+          "app/dashboard/page:app/dashboard/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/login/page.js",
+        "chunks": [
+          "app/dashboard/page:app/dashboard/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/login/page.js",
+        "chunks": [
+          "app/dashboard/page:app/dashboard/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./app/register/page.js": {
+      "*": {
+        "id": "(sc_client)/./app/register/page.js",
+        "chunks": [
+          "app/register/page:app/register/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./app/register/page.js",
+        "chunks": [
+          "app/register/page:app/register/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/register/page.js",
+        "chunks": [
+          "app/register/page:app/register/page"
+        ],
+        "name": "default",
         "async": false
       }
     },
@@ -462,7 +514,7 @@
       "*": {
         "id": "(sc_client)/./public/assets/edit.png",
         "chunks": [
-          "app/dashboard/page:app/dashboard/page"
+          "app/profile/page:app/profile/page"
         ],
         "name": "*",
         "async": false
@@ -470,7 +522,7 @@
       "": {
         "id": "(sc_client)/./public/assets/edit.png",
         "chunks": [
-          "app/dashboard/page:app/dashboard/page"
+          "app/profile/page:app/profile/page"
         ],
         "name": "",
         "async": false
@@ -478,7 +530,7 @@
       "default": {
         "id": "(sc_client)/./public/assets/edit.png",
         "chunks": [
-          "app/dashboard/page:app/dashboard/page"
+          "app/profile/page:app/profile/page"
         ],
         "name": "default",
         "async": false
@@ -536,6 +588,58 @@
         "async": false
       }
     },
+    "(app-client)/./public/assets/avatar_user.png": {
+      "*": {
+        "id": "(sc_client)/./public/assets/avatar_user.png",
+        "chunks": [
+          "app/profile/page:app/profile/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./public/assets/avatar_user.png",
+        "chunks": [
+          "app/profile/page:app/profile/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/assets/avatar_user.png",
+        "chunks": [
+          "app/profile/page:app/profile/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./public/assets/heart.png": {
+      "*": {
+        "id": "(sc_client)/./public/assets/heart.png",
+        "chunks": [
+          "app/profile/page:app/profile/page"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./public/assets/heart.png",
+        "chunks": [
+          "app/profile/page:app/profile/page"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./public/assets/heart.png",
+        "chunks": [
+          "app/profile/page:app/profile/page"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
     "(app-client)/./app/profile/page.js": {
       "*": {
         "id": "(sc_client)/./app/profile/page.js",
@@ -567,6 +671,12 @@
   "__entry_css_files__": {
     "/home/naty/Dev/App/mundo-azul/app/page": [
       "static/css/app/page.css"
+    ],
+    "/home/naty/Dev/App/mundo-azul/app/login/page": [
+      "static/css/app/login/page.css"
+    ],
+    "/home/naty/Dev/App/mundo-azul/app/register/page": [
+      "static/css/app/register/page.css"
     ],
     "/home/naty/Dev/App/mundo-azul/app/dashboard/page": [
       "static/css/app/dashboard/page.css"
@@ -785,14 +895,20 @@
     "name": "",
     "chunks": [
       "static/css/app/page.css",
-      "static/css/app/dashboard/page.css"
+      "static/css/app/login/page.css",
+      "static/css/app/register/page.css",
+      "static/css/app/dashboard/page.css",
+      "static/css/app/profile/page.css"
     ]
   },
   "/home/naty/Dev/App/mundo-azul/components/Footer/Footer.module.css#": {
     "id": "null",
     "name": "",
     "chunks": [
-      "static/css/app/page.css"
+      "static/css/app/page.css",
+      "static/css/app/login/page.css",
+      "static/css/app/register/page.css",
+      "static/css/app/dashboard/page.css"
     ]
   },
   "/home/naty/Dev/App/mundo-azul/public/assets/Logo-MundoAzul.png": {
@@ -846,7 +962,7 @@
   "/home/naty/Dev/App/mundo-azul/public/assets/github-w.png": {
     "id": "(app-client)/./public/assets/github-w.png",
     "chunks": [
-      "app/page:app/page"
+      "app/dashboard/page:app/dashboard/page"
     ],
     "name": "*",
     "async": false
@@ -854,7 +970,7 @@
   "/home/naty/Dev/App/mundo-azul/public/assets/github-w.png#": {
     "id": "(app-client)/./public/assets/github-w.png",
     "chunks": [
-      "app/page:app/page"
+      "app/dashboard/page:app/dashboard/page"
     ],
     "name": "",
     "async": false
@@ -862,7 +978,7 @@
   "/home/naty/Dev/App/mundo-azul/public/assets/github-w.png#default": {
     "id": "(app-client)/./public/assets/github-w.png",
     "chunks": [
-      "app/page:app/page"
+      "app/dashboard/page:app/dashboard/page"
     ],
     "name": "default",
     "async": false
@@ -977,6 +1093,78 @@
       "app/profile/page:app/profile/page"
     ],
     "name": "useAuth",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/app/login/login.module.css#": {
+    "id": "null",
+    "name": "",
+    "chunks": [
+      "static/css/app/login/page.css",
+      "static/css/app/dashboard/page.css"
+    ]
+  },
+  "/home/naty/Dev/App/mundo-azul/components/ErrorAlert/ErrorAlert.module.css#": {
+    "id": "null",
+    "name": "",
+    "chunks": [
+      "static/css/app/login/page.css",
+      "static/css/app/register/page.css",
+      "static/css/app/dashboard/page.css"
+    ]
+  },
+  "/home/naty/Dev/App/mundo-azul/app/login/page.js": {
+    "id": "(app-client)/./app/login/page.js",
+    "chunks": [
+      "app/dashboard/page:app/dashboard/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/app/login/page.js#": {
+    "id": "(app-client)/./app/login/page.js",
+    "chunks": [
+      "app/dashboard/page:app/dashboard/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/app/login/page.js#default": {
+    "id": "(app-client)/./app/login/page.js",
+    "chunks": [
+      "app/dashboard/page:app/dashboard/page"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/app/register/register.module.css#": {
+    "id": "null",
+    "name": "",
+    "chunks": [
+      "static/css/app/register/page.css"
+    ]
+  },
+  "/home/naty/Dev/App/mundo-azul/app/register/page.js": {
+    "id": "(app-client)/./app/register/page.js",
+    "chunks": [
+      "app/register/page:app/register/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/app/register/page.js#": {
+    "id": "(app-client)/./app/register/page.js",
+    "chunks": [
+      "app/register/page:app/register/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/app/register/page.js#default": {
+    "id": "(app-client)/./app/register/page.js",
+    "chunks": [
+      "app/register/page:app/register/page"
+    ],
+    "name": "default",
     "async": false
   },
   "/home/naty/Dev/App/mundo-azul/app/dashboard/dashboard.module.css#": {
@@ -1141,7 +1329,7 @@
   "/home/naty/Dev/App/mundo-azul/public/assets/edit.png": {
     "id": "(app-client)/./public/assets/edit.png",
     "chunks": [
-      "app/dashboard/page:app/dashboard/page"
+      "app/profile/page:app/profile/page"
     ],
     "name": "*",
     "async": false
@@ -1149,7 +1337,7 @@
   "/home/naty/Dev/App/mundo-azul/public/assets/edit.png#": {
     "id": "(app-client)/./public/assets/edit.png",
     "chunks": [
-      "app/dashboard/page:app/dashboard/page"
+      "app/profile/page:app/profile/page"
     ],
     "name": "",
     "async": false
@@ -1157,7 +1345,7 @@
   "/home/naty/Dev/App/mundo-azul/public/assets/edit.png#default": {
     "id": "(app-client)/./public/assets/edit.png",
     "chunks": [
-      "app/dashboard/page:app/dashboard/page"
+      "app/profile/page:app/profile/page"
     ],
     "name": "default",
     "async": false
@@ -1216,6 +1404,54 @@
     "chunks": [
       "static/css/app/profile/page.css"
     ]
+  },
+  "/home/naty/Dev/App/mundo-azul/public/assets/avatar_user.png": {
+    "id": "(app-client)/./public/assets/avatar_user.png",
+    "chunks": [
+      "app/profile/page:app/profile/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/public/assets/avatar_user.png#": {
+    "id": "(app-client)/./public/assets/avatar_user.png",
+    "chunks": [
+      "app/profile/page:app/profile/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/public/assets/avatar_user.png#default": {
+    "id": "(app-client)/./public/assets/avatar_user.png",
+    "chunks": [
+      "app/profile/page:app/profile/page"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/public/assets/heart.png": {
+    "id": "(app-client)/./public/assets/heart.png",
+    "chunks": [
+      "app/profile/page:app/profile/page"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/public/assets/heart.png#": {
+    "id": "(app-client)/./public/assets/heart.png",
+    "chunks": [
+      "app/profile/page:app/profile/page"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/home/naty/Dev/App/mundo-azul/public/assets/heart.png#default": {
+    "id": "(app-client)/./public/assets/heart.png",
+    "chunks": [
+      "app/profile/page:app/profile/page"
+    ],
+    "name": "default",
+    "async": false
   },
   "/home/naty/Dev/App/mundo-azul/app/profile/page.js": {
     "id": "(app-client)/./app/profile/page.js",

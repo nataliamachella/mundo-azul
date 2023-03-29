@@ -11,7 +11,8 @@ import {
   signInWithPopup,
   sendPasswordResetEmail,
 } from "firebase/auth";
-import { auth } from "../firebase/firebase";
+import { auth, db } from "../firebase/firebase";
+import { setDoc, doc } from "firebase/firestore";
 
 export const AuthContext = createContext();
 
@@ -25,8 +26,17 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const signUp = (email, password) => {
-    createUserWithEmailAndPassword(auth, email, password);
+  const createUser = async (email, password) => {
+    await createUserWithEmailAndPassword(auth, email, password).then(
+      (UserCredential) => {
+        setDoc(doc(db, "users", UserCredential.user.uid), {
+          uid: UserCredential.user.uid,
+          displayName: UserCredential.user.displayName,
+          email: UserCredential.user.email,
+          photoURL: UserCredential.user.photoURL,
+        });
+      }
+    );
   };
 
   const login = (email, password) => {
@@ -35,14 +45,28 @@ export function AuthProvider({ children }) {
 
   const logout = () => signOut(auth);
 
-  const loginWithGoogle = () => {
+  const loginWithGoogle = async () => {
     const googleProvider = new GoogleAuthProvider();
-    return signInWithPopup(auth, googleProvider);
+    await signInWithPopup(auth, googleProvider).then((UserCredential) => {
+      setDoc(doc(db, "users", UserCredential.user.uid), {
+        uid: UserCredential.user.uid,
+        displayName: UserCredential.user.displayName,
+        email: UserCredential.user.email,
+        photoURL: UserCredential.user.photoURL,
+      });
+    });
   };
 
-  const loginWithFacebook = () => {
+  const loginWithFacebook = async () => {
     const facebookProvider = new FacebookAuthProvider();
-    return signInWithPopup(auth, facebookProvider);
+    await signInWithPopup(auth, facebookProvider).then((UserCredential) => {
+      setDoc(doc(db, "users", UserCredential.user.uid), {
+        uid: UserCredential.user.uid,
+        displayName: UserCredential.user.displayName,
+        email: UserCredential.user.email,
+        photoURL: UserCredential.user.photoURL,
+      });
+    });
   };
 
   const resetPassword = (email) => {
@@ -50,9 +74,9 @@ export function AuthProvider({ children }) {
   };
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      if (currentUser) {
-        setUser(currentUser);
+    const unsubscribe = onAuthStateChanged(auth, (UserCredential) => {
+      if (UserCredential) {
+        setUser(UserCredential);
       } else {
         setUser(null);
       }
@@ -66,7 +90,7 @@ export function AuthProvider({ children }) {
     <AuthContext.Provider
       value={{
         user,
-        signUp,
+        createUser,
         login,
         logout,
         loginWithGoogle,
@@ -74,7 +98,7 @@ export function AuthProvider({ children }) {
         resetPassword,
       }}
     >
-      {isLoading ? <div>Loading...</div> : children}
+      {isLoading ? <div>Cargando...</div> : children}
     </AuthContext.Provider>
   );
 }

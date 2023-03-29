@@ -12,13 +12,14 @@ import Header from "../../components/Header/Header";
 import logo from "../../public/assets/Logo-MundoAzul.png";
 import Image from "next/image";
 import { useAuth } from "../../context/AuthContext";
+import Login from "../login/page";
 
 const Dashboard = () => {
   const router = useRouter();
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
 
   const onClickAboutMe = () => {
-    router.push("/about-me");
+    router.push("/about");
   };
   const onClickRecipes = () => {
     router.push("/recipes");
@@ -30,57 +31,49 @@ const Dashboard = () => {
     router.push("/doctors");
   };
 
-  const handleClick = async () => {
-    await logout();
-    router.push("/");
-  };
-
   return (
-    <div className={styles.dashboard}>
-      <Header />
+    <>
       {user ? (
-        <>
-          <h1>Hola, {user.displayName || user.email} ! </h1>
-          <button onClick={handleClick} className={styles.button}>
-            Cerrar Sesión
-          </button>
-        </>
+        <div className={styles.dashboard}>
+          <Header />
+          {user && <h1>Hola, {user.displayName || user.email} ! </h1>}
+
+          <Image
+            src={logo}
+            alt="logo Mundo Azul"
+            priority="true"
+            className={styles.img}
+          />
+
+          <Button
+            text="nosotros"
+            img={iconEdit}
+            style={stylesButton.secondary}
+            onClick={onClickAboutMe}
+          />
+          <Button
+            text="recetas"
+            img={iconApple}
+            style={stylesButton.green}
+            onClick={onClickRecipes}
+          />
+          <Button
+            text="comunidad"
+            img={iconComunidad}
+            style={stylesButton.primary}
+            onClick={onClickGroup}
+          />
+          <Button
+            text="médicos"
+            img={iconHospital}
+            style={stylesButton.blue}
+            onClick={onClickDoctors}
+          />
+        </div>
       ) : (
-        ""
+        <Login />
       )}
-
-      <Image
-        src={logo}
-        alt="logo Mundo Azul"
-        priority="true"
-        className={styles.img}
-      />
-
-      <Button
-        text="nosotros"
-        img={iconEdit}
-        style={stylesButton.secondary}
-        onClick={onClickAboutMe}
-      />
-      <Button
-        text="recetas"
-        img={iconApple}
-        style={stylesButton.green}
-        onClick={onClickRecipes}
-      />
-      <Button
-        text="comunidad"
-        img={iconComunidad}
-        style={stylesButton.primary}
-        onClick={onClickGroup}
-      />
-      <Button
-        text="médicos"
-        img={iconHospital}
-        style={stylesButton.blue}
-        onClick={onClickDoctors}
-      />
-    </div>
+    </>
   );
 };
 

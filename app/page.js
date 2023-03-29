@@ -31,38 +31,39 @@ const Home = () => {
   };
 
   return (
-    <div className={styles.home}>
-      <Image
-        src={logoMundoAzul}
-        alt="logo de Mundo Azul"
-        className={styles.logo}
-      />
-      <h1>
-        Ninguno es tan importante como todos nosotros <span>JUNTOS</span>
-      </h1>
-      <Button
-        style={stylesButton.blue}
-        onClick={handleClick}
-        img={iconEmail}
-        text="Ingresar"
-      />
+    <>
+      <div className={styles.home}>
+        <Image
+          src={logoMundoAzul}
+          alt="logo de Mundo Azul"
+          className={styles.logo}
+        />
+        <h1>
+          Ninguno es tan importante como todos nosotros <span>JUNTOS</span>
+        </h1>
+        <Button
+          style={stylesButton.blue}
+          onClick={handleClick}
+          img={iconEmail}
+          text="Ingresar"
+        />
 
-      <Button
-        style={stylesButton.primary}
-        onClick={handleLoginWithFacebook}
-        img={logoFacebook}
-        text="Ingresar con Facebook"
-      />
+        <Button
+          style={stylesButton.primary}
+          onClick={handleLoginWithFacebook}
+          img={logoFacebook}
+          text="Ingresar con Facebook"
+        />
 
-      <Button
-        style={stylesButton.secondary}
-        onClick={handleLoginWithGoogle}
-        img={logoGoogle}
-        text="Ingresar con Google"
-      />
-
+        <Button
+          style={stylesButton.secondary}
+          onClick={handleLoginWithGoogle}
+          img={logoGoogle}
+          text="Ingresar con Google"
+        />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -9,18 +9,7 @@
   font-size: 36px;
   font-weight: 400;
   margin-top: 120px;
-  margin-bottom: 10px;
-}
-
-.button {
-  margin-bottom: 60px;
-  background-color: var(--color-white);
-  border-style: hidden;
-  font-size: 16px;
-  text-decoration: underline;
-  color: var(--color-primary);
-  font-family: var(--font-englebert);
-  cursor: pointer;
+  margin-bottom: 40px;
 }
 
 .img {

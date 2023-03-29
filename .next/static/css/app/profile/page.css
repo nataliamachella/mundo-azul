@@ -31,15 +31,87 @@
   margin-top: 10px;
 }
 
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./components/Button/Button.module.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+.Button_btn__EwQ11 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Button_btn__EwQ11 button img {
+  margin: 10px;
+}
+
+.Button_primary__0sjr_,
+.Button_secondary___axeL,
+.Button_green__btHQR,
+.Button_blue__bt58W {
+  border: none;
+  border-radius: 12px;
+  width: 320px;
+  height: 50px;
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.Button_primary__0sjr_:hover,
+.Button_secondary___axeL:hover,
+.Button_blue__bt58W:hover,
+.Button_green__btHQR:hover {
+  opacity: 0.75;
+}
+
+.Button_primary__0sjr_ {
+  background: var(--color-linear);
+}
+
+.Button_secondary___axeL {
+  background-color: var(--color-light-green);
+}
+
+.Button_green__btHQR {
+  background-color: var(--color-green);
+}
+
+.Button_blue__bt58W {
+  background-color: var(--color-secondary);
+}
+
+.Button_btn_profile__xa_na {
+  border: 2px solid var(--color-light-green);
+  background-color: transparent;
+  color: var(--color-light-green);
+  font-family: var(--font-roboto);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  width: 320px;
+  height: 50px;
+  border-radius: 12px;
+}
+
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[2].oneOf[8].use[3]!./app/profile/profile.module.css ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
 .profile_profile__dDlvV {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   gap: 25px;
   margin-top: 90px;
+  margin-bottom: 30px;
 }
 
 .profile_photo__41hBM {
@@ -51,5 +123,25 @@
 
   font-weight: 400;
   margin-top: 25px;
+}
+
+.profile_button__AfpHt {
+  margin-bottom: 30px;
+  background-color: var(--color-white);
+  border-style: hidden;
+  font-size: 16px;
+  text-decoration: underline;
+  color: var(--color-primary);
+  font-family: var(--font-englebert);
+  cursor: pointer;
+}
+
+.profile_buttons__zBZBY {
+  display: flex;
+  flex-direction: column;
+  height: 125px;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 

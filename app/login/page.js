@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./login.module.css";
 import stylesButton from "../../components/Button/Button.module.css";
-
+import Swal from "sweetalert2";
 import Footer from "../../components/Footer/Footer";
 import { useRouter } from "next/navigation";
 import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
@@ -26,14 +26,18 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
+
     try {
       await login(user.email, user.password);
+      Swal.fire({
+        icon: "success",
+        title: "Usuario logueado",
+        text: "Te has logueado correctamente!",
+      });
+      router.push("/profile");
     } catch (error) {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      setError(errorMessage);
+      setError("Correo o contraseña inválida");
     }
-    router.push("/dashboard");
   };
 
   const handleResetPassword = async () => {
@@ -49,35 +53,37 @@ const Login = () => {
       .catch((error) => setError(error.message));
   };
   return (
-    <div className={styles.login}>
-      <h1>Hola!</h1>
-      {!user && <ErrorAlert message={error} />}
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          name="email"
-          placeholder="Correo Electrónico"
-          onChange={handleChange}
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Contraseña"
-          onChange={handleChange}
-        />
-        <button className={stylesButton.primary}>Ingresar</button>
-      </form>
-      <p>
-        Si no tienes una cuenta puedes crearla
-        <Link href="/register"> AQUÍ</Link>
-      </p>
-      {error && <ErrorAlert message={error} />}
-      <a onClick={handleResetPassword} className={styles.reset}>
-        Olvidé la contraseña
-      </a>
+    <>
+      <div className={styles.login}>
+        <h1>Mundo Azul</h1>
+        <span>Iniciar sesión</span>
 
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo Electrónico"
+            onChange={handleChange}
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Contraseña"
+            onChange={handleChange}
+          />
+          <button className={stylesButton.primary}>Ingresar</button>
+        </form>
+        <p>
+          Si no tienes una cuenta puedes crearla
+          <Link href="/register"> AQUÍ</Link>
+        </p>
+        {error && <ErrorAlert message={error} />}
+        <a onClick={handleResetPassword} className={styles.reset}>
+          Olvidé la contraseña
+        </a>
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
