@@ -8,6 +8,7 @@ import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../context/AuthContext";
 import Swal from "sweetalert2";
+import Title from "../../components/Title/Title";
 
 const Register = () => {
   const [data, setData] = useState({
@@ -50,8 +51,8 @@ const Register = () => {
   return (
     <>
       <div className={styles.register}>
-        <h1>Mundo Azul</h1>
-        <span>Registro</span>
+        <Title text="Mundo Azul" />
+        <h3>Registro</h3>
 
         <form onSubmit={handleSubmit}>
           <input
@@ -72,8 +73,7 @@ const Register = () => {
         </form>
         {error && <ErrorAlert message={error} />}
         <p>
-          <span>Ya estás registrado? </span>
-          <Link href="/login">Ingresar</Link>
+          Ya estás registrado? <Link href="/login">Ingresar</Link>
         </p>
       </div>
       <Footer />

@@ -1,0 +1,31 @@
+.navbar {
+  width: 90%;
+  border-radius: 10px;
+  margin: 30px auto;
+  padding: 20px 10px;
+  background: linear-gradient(202.17deg, #1083ad 8.58%, #08c4c4 91.42%);
+}
+
+.navbar h1 {
+  text-align: center;
+  color: var(--color-white);
+  font-size: 20px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  margin: 30px auto 10px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  width: 60px;
+  height: 60px;
+}

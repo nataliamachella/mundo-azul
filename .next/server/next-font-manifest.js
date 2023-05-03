@@ -1,15 +1,30 @@
 self.__NEXT_FONT_MANIFEST={
   "pages": {},
   "app": {
-    "/home/naty/Dev/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Poppins\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-poppins\",\"display\":\"swap\",\"weight\":\"400\"}],\"variableName\":\"poppins\"}": [
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Poppins\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-poppins\",\"display\":\"swap\",\"weight\":\"400\"}],\"variableName\":\"poppins\"}": [
       "static/media/916d3686010a8de2-s.p.woff2"
     ],
-    "/home/naty/Dev/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Englebert\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-englebert\",\"display\":\"swap\",\"weight\":\"400\"}],\"variableName\":\"englebert\"}": [
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Englebert\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-englebert\",\"display\":\"swap\",\"weight\":\"400\"}],\"variableName\":\"englebert\"}": [
       "static/media/bd5471b844757d01-s.p.woff2"
     ],
-    "/home/naty/Dev/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Roboto\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-roboto\",\"display\":\"swap\",\"weight\":[\"400\",\"700\"]}],\"variableName\":\"roboto\"}": [
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/next/font/google/target.css?{\"path\":\"app/layout.js\",\"import\":\"Roboto\",\"arguments\":[{\"subsets\":[\"latin\"],\"variable\":\"--font-roboto\",\"display\":\"swap\",\"weight\":[\"400\",\"700\"]}],\"variableName\":\"roboto\"}": [
+      "static/media/0e4fe491bf84089c-s.p.woff2",
+      "static/media/934c4b7cb736f2a3-s.p.woff2"
+    ],
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/@next/font/google/target.css?{\"path\":\"app/page.js\",\"import\":\"Roboto\",\"arguments\":[{\"weight\":[\"100\",\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"roboto\"}": [
       "static/media/934c4b7cb736f2a3-s.p.woff2",
-      "static/media/0e4fe491bf84089c-s.p.woff2"
+      "static/media/0e4fe491bf84089c-s.p.woff2",
+      "static/media/02205c9944024f15-s.p.woff2"
+    ],
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/@next/font/google/target.css?{\"path\":\"components/Footer/Footer.jsx\",\"import\":\"Poppins\",\"arguments\":[{\"weight\":[\"400\",\"700\"],\"subsets\":[\"latin\"]}],\"variableName\":\"poppins\"}": [
+      "static/media/916d3686010a8de2-s.p.woff2",
+      "static/media/9a881e2ac07d406b-s.p.woff2"
+    ],
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/@next/font/google/target.css?{\"path\":\"components/Title/Title.jsx\",\"import\":\"Englebert\",\"arguments\":[{\"weight\":\"400\",\"subsets\":[\"latin\"]}],\"variableName\":\"englebert\"}": [
+      "static/media/bd5471b844757d01-s.p.woff2"
+    ],
+    "/home/naty/Dev/Proyectos/App/mundo-azul/node_modules/@next/font/google/target.css?{\"path\":\"components/Greeting/Greeting.jsx\",\"import\":\"Englebert\",\"arguments\":[{\"weight\":\"400\",\"subsets\":[\"latin\"]}],\"variableName\":\"englebert\"}": [
+      "static/media/bd5471b844757d01-s.p.woff2"
     ]
   },
   "appUsingSizeAdjust": true,

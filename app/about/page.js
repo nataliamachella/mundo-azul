@@ -7,10 +7,9 @@ import photo from "../../public/assets/Sofi.jpg";
 const AboutMe = () => {
   return (
     <>
-      <Header />
       <div className={styles.AboutMe}>
         <h1 className={styles.h1}>
-          Hola! soy Natalia. <br></br>
+          Hola! soy Natalia. <br />
           Me alegra que estés aquí...
         </h1>
 
@@ -29,6 +28,7 @@ const AboutMe = () => {
             especializados en ese diagnóstico y recetas saludables que mejoren
             la calidad de vida de nuestros niñ@s.
           </p>
+          <br />
           <p>
             Cuando comenzamos a transitar este camino, no sabemos bien por dónde
             comenzar, qué trámites debemos realizar, cuáles son nuestros
@@ -43,6 +43,7 @@ const AboutMe = () => {
           <p>Natalia 💙 </p>
         </div>
       </div>
+      <Header />
     </>
   );
 };

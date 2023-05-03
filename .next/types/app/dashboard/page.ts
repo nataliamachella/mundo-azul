@@ -1,4 +1,4 @@
-// File: /home/naty/Dev/App/mundo-azul/app/dashboard/page.js
+// File: /home/naty/Dev/Proyectos/App/mundo-azul/app/dashboard/page.js
 import * as entry from '../../../../app/dashboard/page'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface'
 

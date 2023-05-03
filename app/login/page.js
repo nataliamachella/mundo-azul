@@ -8,6 +8,7 @@ import { useRouter } from "next/navigation";
 import ErrorAlert from "../../components/ErrorAlert/ErrorAlert";
 import Link from "next/link";
 import { useAuth } from "../../context/AuthContext";
+import Title from "../../components/Title/Title";
 
 const Login = () => {
   const router = useRouter();
@@ -55,8 +56,8 @@ const Login = () => {
   return (
     <>
       <div className={styles.login}>
-        <h1>Mundo Azul</h1>
-        <span>Iniciar sesión</span>
+        <Title text="Mundo Azul" />
+        <h3>Iniciar sesión</h3>
 
         <form onSubmit={handleSubmit}>
           <input
@@ -78,7 +79,7 @@ const Login = () => {
           <Link href="/register"> AQUÍ</Link>
         </p>
         {error && <ErrorAlert message={error} />}
-        <a onClick={handleResetPassword} className={styles.reset}>
+        <a onClick={handleResetPassword} className={`${styles.reset} `}>
           Olvidé la contraseña
         </a>
       </div>

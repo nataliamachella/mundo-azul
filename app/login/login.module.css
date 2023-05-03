@@ -3,16 +3,13 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-top: 30px;
 }
 
-.login h1 {
-  margin-top: 70px;
-  margin-bottom: 20px;
-}
-
-.login span {
-  margin-bottom: 70px;
+.login h3 {
+  margin: 40px 0;
   color: var(--color-primary);
+  font-size: 24px;
 }
 
 .login form {
@@ -27,7 +24,6 @@
 
 .login p {
   font-size: 14px;
-  font-family: var(--font-poppins);
   color: var(--color-primary);
   margin-bottom: 60px;
 }
@@ -38,7 +34,6 @@
 
 .reset {
   font-size: 16px;
-  font-family: var(--font-poppins);
   color: #072cba;
   margin-bottom: 60px;
   cursor: pointer;

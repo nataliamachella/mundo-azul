@@ -9,10 +9,11 @@ import iconEdit from "../../public/assets/edit.png";
 import iconHospital from "../../public/assets/hospital.png";
 import { useRouter } from "next/navigation";
 import Header from "../../components/Header/Header";
-import logo from "../../public/assets/Logo-MundoAzul.png";
-import Image from "next/image";
+
+import Logo from "../../components/Logo/Logo";
 import { useAuth } from "../../context/AuthContext";
 import Login from "../login/page";
+import Greeting from "../../components/Greeting/Greeting";
 
 const Dashboard = () => {
   const router = useRouter();
@@ -35,40 +36,36 @@ const Dashboard = () => {
     <>
       {user ? (
         <div className={styles.dashboard}>
+          {user && <Greeting />}
+
+          <Logo />
+          <div className={styles.buttons}>
+            <Button
+              text="nosotros"
+              img={iconEdit}
+              style={stylesButton.secondary}
+              onClick={onClickAboutMe}
+            />
+            <Button
+              text="recetas"
+              img={iconApple}
+              style={stylesButton.green}
+              onClick={onClickRecipes}
+            />
+            <Button
+              text="comunidad"
+              img={iconComunidad}
+              style={stylesButton.primary}
+              onClick={onClickGroup}
+            />
+            <Button
+              text="médicos"
+              img={iconHospital}
+              style={stylesButton.blue}
+              onClick={onClickDoctors}
+            />
+          </div>
           <Header />
-          {user && <h1>Hola, {user.displayName || user.email} ! </h1>}
-
-          <Image
-            src={logo}
-            alt="logo Mundo Azul"
-            priority="true"
-            className={styles.img}
-          />
-
-          <Button
-            text="nosotros"
-            img={iconEdit}
-            style={stylesButton.secondary}
-            onClick={onClickAboutMe}
-          />
-          <Button
-            text="recetas"
-            img={iconApple}
-            style={stylesButton.green}
-            onClick={onClickRecipes}
-          />
-          <Button
-            text="comunidad"
-            img={iconComunidad}
-            style={stylesButton.primary}
-            onClick={onClickGroup}
-          />
-          <Button
-            text="médicos"
-            img={iconHospital}
-            style={stylesButton.blue}
-            onClick={onClickDoctors}
-          />
         </div>
       ) : (
         <Login />

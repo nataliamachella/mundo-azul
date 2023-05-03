@@ -3,15 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
 }
-
-.dashboard h1 {
-  font-size: 36px;
-  font-weight: 400;
-  margin-top: 120px;
-  margin-bottom: 40px;
-}
-
-.img {
-  margin-bottom: 40px;
+.buttons {
+  margin-top: 50px;
 }

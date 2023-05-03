@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import Footer from "../components/Footer/Footer";
-import logoMundoAzul from "../public/assets/Logo-MundoAzul.png";
 import logoGoogle from "../public/assets/Logo_Google.png";
 import logoFacebook from "../public/assets/logo_facebook.png";
 import iconEmail from "../public/assets/icon_email.png";
@@ -11,6 +10,10 @@ import styles from "./page.module.css";
 import stylesButton from "../components/Button/Button.module.css";
 import { useAuth } from "../context/AuthContext";
 import Button from "../components/Button/Button";
+import { Roboto } from "@next/font/google";
+import Logo from "../components/Logo/Logo";
+
+const roboto = Roboto({ weight: ["100", "400", "700"], subsets: ["latin"] });
 
 const Home = () => {
   const router = useRouter();
@@ -33,12 +36,8 @@ const Home = () => {
   return (
     <>
       <div className={styles.home}>
-        <Image
-          src={logoMundoAzul}
-          alt="logo de Mundo Azul"
-          className={styles.logo}
-        />
-        <h1>
+        <Logo />
+        <h1 className={roboto.className}>
           Ninguno es tan importante como todos nosotros <span>JUNTOS</span>
         </h1>
         <Button
